@@ -1,0 +1,27 @@
+{
+  "name": "ts-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "breukh": "lite-server & tsc -w",
+    "build": "postcss public/css/style.css -o dist/css/style.css -w",
+    "dev": "lite-server & tsc -w & postcss public/css/style.css -o dist/css/style.css -w",
+    "aly": "postcss public/css/style.css -o dist/css/style.css",
+    "watch": "watch \"npm run aly\" ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^4.11.1",
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.3",
+    "watch": "^1.0.2"
+  }
+}
